@@ -13,6 +13,8 @@
 		F5A8CA3B1E8C3572005AFF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A8CA391E8C3572005AFF54 /* Main.storyboard */; };
 		F5A8CA3D1E8C3572005AFF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8CA3C1E8C3572005AFF54 /* Assets.xcassets */; };
 		F5A8CA401E8C3572005AFF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A8CA3E1E8C3572005AFF54 /* LaunchScreen.storyboard */; };
+		F5A8CA4B1E8C35DC005AFF54 /* SFIntro.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A8CA491E8C35DC005AFF54 /* SFIntro.m */; };
+		F5A8CA4C1E8C35DC005AFF54 /* SFIntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A8CA4A1E8C35DC005AFF54 /* SFIntroView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		F5A8CA3C1E8C3572005AFF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A8CA3F1E8C3572005AFF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A8CA411E8C3572005AFF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A8CA481E8C35DC005AFF54 /* SFIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFIntro.h; sourceTree = "<group>"; };
+		F5A8CA491E8C35DC005AFF54 /* SFIntro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFIntro.m; sourceTree = "<group>"; };
+		F5A8CA4A1E8C35DC005AFF54 /* SFIntroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFIntroView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 				F5A8CA341E8C3572005AFF54 /* AppDelegate.m */,
 				F5A8CA361E8C3572005AFF54 /* ViewController.h */,
 				F5A8CA371E8C3572005AFF54 /* ViewController.m */,
+				F5A8CA471E8C35DC005AFF54 /* SFIntro */,
 				F5A8CA391E8C3572005AFF54 /* Main.storyboard */,
 				F5A8CA3C1E8C3572005AFF54 /* Assets.xcassets */,
 				F5A8CA3E1E8C3572005AFF54 /* LaunchScreen.storyboard */,
@@ -77,6 +83,16 @@
 				F5A8CA311E8C3572005AFF54 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5A8CA471E8C35DC005AFF54 /* SFIntro */ = {
+			isa = PBXGroup;
+			children = (
+				F5A8CA481E8C35DC005AFF54 /* SFIntro.h */,
+				F5A8CA491E8C35DC005AFF54 /* SFIntro.m */,
+				F5A8CA4A1E8C35DC005AFF54 /* SFIntroView.xib */,
+			);
+			path = SFIntro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A8CA4C1E8C35DC005AFF54 /* SFIntroView.xib in Resources */,
 				F5A8CA401E8C3572005AFF54 /* LaunchScreen.storyboard in Resources */,
 				F5A8CA3D1E8C3572005AFF54 /* Assets.xcassets in Resources */,
 				F5A8CA3B1E8C3572005AFF54 /* Main.storyboard in Resources */,
@@ -151,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A8CA381E8C3572005AFF54 /* ViewController.m in Sources */,
+				F5A8CA4B1E8C35DC005AFF54 /* SFIntro.m in Sources */,
 				F5A8CA351E8C3572005AFF54 /* AppDelegate.m in Sources */,
 				F5A8CA321E8C3572005AFF54 /* main.m in Sources */,
 			);
