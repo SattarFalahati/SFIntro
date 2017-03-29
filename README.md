@@ -18,5 +18,26 @@ Use this to handle SFIntro objects at desire index (this delegate will called on
 ```
 -(void)presentedIntroPage:(SFIntro *)intro atIndex:(NSUInteger)pageIndex;
 ```
+Handle first button 
+```
+-(void)firstButtonDidSelectWithIntro:(SFIntro *)intro;
+```
 
+Handle second button
+```
+-(void)secondButtonDidSelectWithIntro:(SFIntro *)intro;
+```
+## Versioning
 
+Version 1.0.0
+
+## Author
+Sattar Falahati 
+
+iOS Developer
+
+sattar.falahati@gmail.com
+
+## License
+
+This project is licensed under the MIT License
