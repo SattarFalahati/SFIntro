@@ -45,11 +45,11 @@ static NSString *const kSFIntroObjectDescription = @"description"; // Use it for
 
 /**
  * Initial SFIntro
- * @param frame = to hold view size
- * @param strParallaxBGImage = an image for parallax background (if user send it nil it background won't be parallax)
- * @param delegate
- * @param arrDataSource = SFIntroObjects (image, title, description)
- * @return SFIntro
+ * frame = to hold view size
+ * strParallaxBGImage = an image for parallax background (if user send it nil it background won't be parallax)
+ * delegate
+ * arrDataSource = SFIntroObjects (image, title, description)
+ * SFIntro
  */
 + (instancetype)initWithFrame:(CGRect)frame withParallaxBackgroundImage:(NSString *)strParallaxBGImage withDelegate:(id<SFIntroDelegate>) delegate withDataSourceArray:(NSArray *)arrDataSource;
 
@@ -100,21 +100,21 @@ static NSString *const kSFIntroObjectDescription = @"description"; // Use it for
 -(void)firstButtonDidSelectWithIntro:(SFIntro *)intro;
 
 /// Handle second button
--(void)secondButtonDidSelectWithIntro:(SFIntro *)intro;;
+-(void)secondButtonDidSelectWithIntro:(SFIntro *)intro;
 
 /**
  * Use this to handle SFIntroView objects at desire index (this delegate will called on SFIntro initialization)
- * @return pageIndex
- * @return page (SFIntroView) which contains image, title, description
- * @return dicSFIntroObject which contains all objects image, title, description
+ * pageIndex
+ * page (SFIntroView) which contains image, title, description
+ * dicSFIntroObject which contains all objects image, title, description
  */
 -(void)presentedIntroViewPage:(SFIntroView *)page atIndex:(NSInteger)pageIndex withSFIntroObject:(NSDictionary *)dicSFIntroObject;
 
 /**
  * Use this to handle SFIntro objects at desire index (this delegate will called on presenting each single page)
- * @return intro
- * @return pageIndex
- * @example you can change buttons / grafic or ... on onle one desire page or you van have diffrent setup for each single page.
+ * intro
+ * pageIndex
+ * you can change buttons / grafic or ... on onle one desire page or you van have diffrent setup for each single page.
  */
 -(void)presentedIntroPage:(SFIntro *)intro atIndex:(NSUInteger)pageIndex;
 
