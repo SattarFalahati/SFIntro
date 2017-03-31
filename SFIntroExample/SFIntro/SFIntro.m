@@ -213,12 +213,6 @@ SFIntro *_intro;
     [self hideButton:self.btnSecond];
 }
 
-- (void)hideButtons
-{
-    self.buttons.hidden = YES;
-    [self layoutIfNeeded];
-}
-
 - (void)showFirstButton
 {
     [self showButton:self.btnFirst];
@@ -229,10 +223,50 @@ SFIntro *_intro;
     [self showButton:self.btnSecond];
 }
 
+- (void)hideButtons
+{
+    self.buttons.alpha = 1;
+    
+    // Show Buttons
+    [UIView animateWithDuration:0.1 animations:^{
+        
+        self.buttons.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+        
+        self.buttons.hidden = YES;
+        
+        // Update layouts with animation
+        [UIView animateWithDuration:0.1 animations:^{
+            [self layoutIfNeeded];
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }];
+}
+
 - (void)showButtons
 {
-    self.buttons.hidden = NO;
-    [self layoutIfNeeded];
+    self.buttons.alpha = 0;
+    
+    // Show Buttons
+    [UIView animateWithDuration:0.1 animations:^{
+        
+        self.buttons.alpha = 1;
+        
+    } completion:^(BOOL finished) {
+        
+        self.buttons.hidden = NO;
+        
+        // Update layouts with animation
+        [UIView animateWithDuration:0.1 animations:^{
+            [self layoutIfNeeded];
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }];
 }
 
 // MARK: - Private functions
@@ -246,14 +280,46 @@ SFIntro *_intro;
 
 - (void)hideButton:(UIButton *)btn
 {
-    btn.hidden = YES;
-    [self layoutIfNeeded];
+    btn.alpha = 1;
+    // Hide Buttons
+    [UIView animateWithDuration:0.1 animations:^{
+        
+        btn.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+        
+        btn.hidden = YES;
+        
+        // Update layouts with animation
+        [UIView animateWithDuration:0.1 animations:^{
+            [self layoutIfNeeded];
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }];
 }
 
 - (void)showButton:(UIButton *)btn
 {
-    btn.hidden = NO;
-    [self layoutIfNeeded];
+    btn.alpha = 0;
+    // Show Buttons
+    [UIView animateWithDuration:0.1 animations:^{
+        
+        btn.alpha = 1;
+        
+    } completion:^(BOOL finished) {
+        
+        btn.hidden = NO;
+        
+        // Update layouts with animation
+        [UIView animateWithDuration:0.1 animations:^{
+            [self layoutIfNeeded];
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }];
 }
 
 @end
