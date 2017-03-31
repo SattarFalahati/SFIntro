@@ -4,9 +4,9 @@ Intro / Tutorial
 iOS Version 9+
 
 ## How it's Work
-To implement and make this class working : Copy SFIntro.h/m and SFIntroView.xib to your project.
+To implement and make this framework working : Copy SFIntro.h/m and SFIntroView.xib to your project.
 
-You can change everything in this class and also you can setUp your on desire colors anf fonts.
+You can change everything in this class and also you can setUp your own desire colors and fonts.
 
 ## Delegate 
 You can Use delegates to controll the intro.
@@ -38,6 +38,8 @@ Sattar Falahati
 
 iOS Developer
 
+Plase report any bug you find
+ 
 sattar.falahati@gmail.com
 
 ## License
