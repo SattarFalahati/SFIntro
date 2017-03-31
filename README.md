@@ -1,7 +1,7 @@
 # SFIntro
 Intro / Tutorial 
 
-iOS Version 8+
+iOS Version 9+
 
 ## How it's Work
 To implement and make this class working : Copy SFIntro.h/m and SFIntroView.xib to your project.
